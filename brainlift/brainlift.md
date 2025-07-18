@@ -8,7 +8,7 @@ The official title for the project is **Singularity One**.
 
 ## 2. Core Concept
 
-*   **Genre:** First-Person Puzzle/Exploration with Parkour elements.
+*   **Genre:** Third-Person Puzzle/Exploration with Parkour elements.
 *   **Setting:** A high-tech research facility where an experiment has gone wrong, creating a black hole.
 *   **Protagonist:** The lead researcher who caused the disaster.
 *   **Goal:** The player must navigate the physics-defying lab to deliver a payload of antimatter to the black hole's core to neutralize it before it grows too large and consumes everything.
@@ -28,7 +28,7 @@ The core gameplay philosophy is to make the player feel "barely in control." The
 
 ### a. Perspective
 
-*   **First-Person:** Chosen to maximize immersion, psychological pressure, and the disorienting feeling of the physics shifts.
+*   **Third-Person:** Chosen to give flexibility to switch to first person later.  First person may maximize immersion, psychological pressure, and the disorienting feeling of the physics shifts.
 
 ### b. Failure State
 
