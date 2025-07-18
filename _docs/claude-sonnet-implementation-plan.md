@@ -62,23 +62,32 @@ Ran tool
 ### **Phase 2: Physics Anomalies** ⚡
 *Goal: Implement the signature "physics-defying" gameplay*
 
-**World Rotation System (Gravity Shifting):**
-1. **Level Rotation Controller**
-   - Implement world rotation around player
-   - Smooth transitions between orientations
-   - Prevent camera control issues
+**Custom Physics Volume System (Gravity Vector Fields):**
+1. **Custom UPhysicsVolume Class (C++)**
+   - Inherit from UPhysicsVolume to create custom gravity fields
+   - Implement dynamic vector field calculations for gravity direction/intensity
+   - Support time-based gravity changes and real-time manipulation
+   - Override physics calculations to affect all objects within volume
 
 2. **Gravity Anomaly Zones**
-   - Trigger volumes that initiate world rotation
-   - Visual indicators for anomaly fields
-   - Audio cues for physics shifts
+   - Placeable volumes throughout the laboratory level
+   - Visual indicators showing gravity field directions and intensities
+   - Particle effects and audio cues for physics field visualization
+   - Multiple overlapping volumes for complex gravity interactions
 
-3. **Player Adaptation Systems**
-   - Maintain player orientation during rotation
-   - Prevent disorientation through careful camera work
-   - Smooth transitions between normal/anomaly states
+3. **Dynamic Physics Effects**
+   - Real-time gravity vector modifications affecting both player and objects
+   - Smooth transitions between different gravity fields
+   - Physics objects (debris, equipment) respond to custom gravity
+   - Player movement adaptation to changing gravity directions
 
-**End of Phase 2:** Working gravity shift mechanics that transform walls into floors through world rotation.
+4. **Advanced Field Behaviors**
+   - Gravity intensity scaling (weak to strong fields)
+   - Directional gravity (not just up/down - any 3D direction)
+   - Time-based gravity oscillations and rotations
+   - Gravity "wells" and "repulsion" zones
+
+**End of Phase 2:** A sophisticated physics system with custom gravity volumes affecting all objects, creating dynamic and unpredictable environmental physics.
 
 ---
 
