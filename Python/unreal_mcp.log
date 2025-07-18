@@ -1,0 +1,1019 @@
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:09:13,499 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:09:13,511 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:09:13,513 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:09:13,516 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:09:13,516 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:09:13,519 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:09:13,519 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 19:09:13,529 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 19:09:13,529 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 19:09:13,529 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:09:13,529 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 19:09:13,529 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 19:09:24,062 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:15:52,188 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:15:52,193 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:15:52,195 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:15:52,199 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:15:52,199 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:15:52,202 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:15:52,202 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 19:15:52,203 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 19:15:52,204 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 19:15:52,204 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:15:52,204 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 19:15:52,204 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 19:16:14,575 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 1 validation error for JSONRPCMessage
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='jjkl;\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-07-17 19:16:16,432 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 1 validation error for JSONRPCMessage
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='jkhlkbjkblk\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-07-17 19:16:16,855 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 1 validation error for JSONRPCMessage
+  Invalid JSON: EOF while parsing a value at line 2 column 0 [type=json_invalid, input_value='\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-07-17 19:16:17,014 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 1 validation error for JSONRPCMessage
+  Invalid JSON: EOF while parsing a value at line 2 column 0 [type=json_invalid, input_value='\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-07-17 19:16:18,390 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 1 validation error for JSONRPCMessage
+  Invalid JSON: EOF while parsing a value at line 2 column 0 [type=json_invalid, input_value='\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/json_invalid
+2025-07-17 19:16:20,822 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 19:17:58,582 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:17:58,583 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:17:58,587 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:17:58,590 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:17:58,593 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:17:58,594 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:17:58,596 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:17:58,597 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 19:17:58,598 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 19:17:58,598 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 19:17:58,598 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:17:58,599 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 19:17:58,599 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 19:17:58,600 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-07-17 19:17:58,601 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x103dab390>
+2025-07-17 19:17:58,601 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:17:58,601 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:17:58,603 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:17:58,604 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x103dabd90>
+2025-07-17 19:17:58,604 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:17:58,604 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:17:58,605 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:17:58,612 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:17:58,617 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:17:58,619 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:17:58,623 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:17:58,624 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:17:58,627 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:17:58,627 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 19:17:58,628 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 19:17:58,629 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 19:17:58,629 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:17:58,629 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 19:17:58,629 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 19:17:58,632 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x103d5f950>
+2025-07-17 19:17:58,632 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:17:58,632 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:17:58,634 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:17:58,634 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x103d5efd0>
+2025-07-17 19:17:58,635 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:17:58,635 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:17:58,636 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:54:16,453 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:54:16,459 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:54:16,465 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:54:16,469 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:54:16,469 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:54:16,472 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:54:16,472 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 19:54:16,474 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 19:54:16,474 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 19:54:16,474 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:54:16,474 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:54:16,474 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:54:16,474 - UnrealMCP - WARNING - [unreal_mcp_server.py:248] - Could not connect to Unreal Engine on startup
+2025-07-17 19:54:16,475 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-07-17 19:54:16,481 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x1044a7390>
+2025-07-17 19:54:16,481 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:54:16,481 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:54:16,483 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:54:16,483 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x1044a7d90>
+2025-07-17 19:54:16,483 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 19:54:16,483 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type ListToolsRequest
+2025-07-17 19:54:16,485 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:54:19,896 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 19:57:55,665 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10445f950>
+2025-07-17 19:57:55,665 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 19:57:55,666 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 19:57:55,671 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 19:57:55,671 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 19:57:55,672 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 19:57:55,678 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 19:57:55,682 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 19:57:55,687 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 19:57:55,688 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 19:57:55,692 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 19:57:55,692 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:57:55,692 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:57:55,692 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:57:55,692 - UnrealMCP - WARNING - [editor_tools.py:25] - Failed to connect to Unreal Engine
+2025-07-17 19:57:55,693 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:58:04,397 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10445f360>
+2025-07-17 19:58:04,397 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 19:58:04,397 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 19:58:04,397 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:58:04,398 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:58:04,398 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:58:04,398 - UnrealMCP - WARNING - [editor_tools.py:25] - Failed to connect to Unreal Engine
+2025-07-17 19:58:04,398 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:58:19,048 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x1044bb410>
+2025-07-17 19:58:19,048 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 19:58:19,048 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 19:58:19,048 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:58:19,048 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:58:19,048 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:58:19,048 - UnrealMCP - WARNING - [editor_tools.py:62] - Failed to connect to Unreal Engine
+2025-07-17 19:58:19,048 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:58:30,642 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x104854f30>
+2025-07-17 19:58:30,642 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 19:58:30,642 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 19:58:30,642 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:58:30,642 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:58:30,643 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:58:30,643 - UnrealMCP - WARNING - [editor_tools.py:25] - Failed to connect to Unreal Engine
+2025-07-17 19:58:30,643 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 19:59:00,394 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x104855370>
+2025-07-17 19:59:00,395 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 19:59:00,395 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 19:59:00,395 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 19:59:00,395 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 19:59:00,395 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 19:59:00,395 - UnrealMCP - WARNING - [editor_tools.py:62] - Failed to connect to Unreal Engine
+2025-07-17 19:59:00,396 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:00:33,688 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x104859750>
+2025-07-17 20:00:33,688 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:00:33,688 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:00:33,688 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:00:33,688 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 20:00:33,688 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 20:00:33,688 - UnrealMCP - WARNING - [editor_tools.py:25] - Failed to connect to Unreal Engine
+2025-07-17 20:00:33,689 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:00:42,249 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x104858050>
+2025-07-17 20:00:42,249 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:00:42,249 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:00:42,249 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:00:42,249 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 20:00:42,249 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 20:00:42,250 - UnrealMCP - WARNING - [editor_tools.py:62] - Failed to connect to Unreal Engine
+2025-07-17 20:00:42,250 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:00:48,744 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10446fb60>
+2025-07-17 20:00:48,744 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:00:48,744 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:00:48,744 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:00:48,744 - UnrealMCP - ERROR - [unreal_mcp_server.py:67] - Failed to connect to Unreal: [Errno 61] Connection refused
+2025-07-17 20:00:48,745 - UnrealMCP - WARNING - [unreal_mcp_server.py:213] - Could not connect to Unreal Engine
+2025-07-17 20:00:48,745 - UnrealMCP - WARNING - [editor_tools.py:62] - Failed to connect to Unreal Engine
+2025-07-17 20:00:48,745 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:02:58,529 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10446fc50>
+2025-07-17 20:02:58,530 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:02:58,530 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:02:58,530 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:02:58,531 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:02:58,531 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:02:58,531 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:02:58,531 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 20:02:58,826 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,827 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,827 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,828 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,828 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,829 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,830 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,830 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,831 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,832 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,832 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,834 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,835 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,836 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,837 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:02:58,838 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:03,839 - UnrealMCP - WARNING - [unreal_mcp_server.py:111] - Socket timeout during receive
+2025-07-17 20:03:03,842 - UnrealMCP - ERROR - [unreal_mcp_server.py:190] - Error sending command: Timeout receiving Unreal response
+2025-07-17 20:03:03,842 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:03,842 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:03,843 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:03:16,196 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10488e190>
+2025-07-17 20:03:16,196 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:03:16,196 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:03:16,196 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:03:16,196 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:16,197 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:16,197 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:03:16,197 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:16,197 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:16,197 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "find_actors_by_name", "params": {"pattern": "LevelSequence"}}
+2025-07-17 20:03:16,475 - UnrealMCP - INFO - [unreal_mcp_server.py:101] - Received complete response (229 bytes)
+2025-07-17 20:03:16,476 - UnrealMCP - INFO - [unreal_mcp_server.py:159] - Complete response from Unreal: {'status': 'success', 'result': {'actors': [{'name': 'LevelSequenceActor_1', 'class': 'LevelSequenceActor', 'location': [187, 83, 172], 'rotation': [0, 0, 0], 'scale': [1, 1, 1]}]}}
+2025-07-17 20:03:16,477 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:03:23,771 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10488c210>
+2025-07-17 20:03:23,771 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:03:23,771 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:03:23,772 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:23,772 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 20:03:24,162 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,163 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,163 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,163 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,164 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,164 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,165 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,165 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,166 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,166 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,167 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,167 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,168 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,169 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,170 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:24,171 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:29,172 - UnrealMCP - WARNING - [unreal_mcp_server.py:111] - Socket timeout during receive
+2025-07-17 20:03:29,174 - UnrealMCP - ERROR - [unreal_mcp_server.py:190] - Error sending command: Timeout receiving Unreal response
+2025-07-17 20:03:29,174 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:29,174 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:29,175 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:03:39,695 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x1044e6b60>
+2025-07-17 20:03:39,695 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:03:39,695 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:03:39,696 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:03:39,696 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:39,696 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:39,696 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:03:39,696 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:39,696 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:39,697 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 20:03:39,826 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,826 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,826 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,826 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,827 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,827 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,828 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,828 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,829 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,829 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,830 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,830 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,831 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,832 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,832 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:39,833 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:03:44,834 - UnrealMCP - WARNING - [unreal_mcp_server.py:111] - Socket timeout during receive
+2025-07-17 20:03:44,837 - UnrealMCP - ERROR - [unreal_mcp_server.py:190] - Error sending command: Timeout receiving Unreal response
+2025-07-17 20:03:44,837 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:44,837 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:03:44,838 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:03:48,947 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x104333c50>
+2025-07-17 20:03:48,947 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:03:48,947 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:03:48,947 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:03:48,947 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:48,947 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:48,947 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:03:48,948 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:03:48,948 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:03:48,948 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "find_actors_by_name", "params": {"pattern": "Sequence"}}
+2025-07-17 20:03:49,145 - UnrealMCP - INFO - [unreal_mcp_server.py:101] - Received complete response (229 bytes)
+2025-07-17 20:03:49,146 - UnrealMCP - INFO - [unreal_mcp_server.py:159] - Complete response from Unreal: {'status': 'success', 'result': {'actors': [{'name': 'LevelSequenceActor_1', 'class': 'LevelSequenceActor', 'location': [187, 83, 172], 'rotation': [0, 0, 0], 'scale': [1, 1, 1]}]}}
+2025-07-17 20:03:49,147 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 20:11:17,983 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 20:11:17,988 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:11:17,991 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:11:17,994 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:11:17,995 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:11:17,997 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:11:17,998 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 20:11:17,999 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 20:11:18,000 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 20:11:18,000 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:11:18,000 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:11:18,000 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 20:11:23,894 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 20:17:40,523 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x1043334d0>
+2025-07-17 20:17:40,525 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:17:40,525 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:17:40,525 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:17:40,525 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:17:40,525 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:17:40,525 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:17:40,525 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:17:40,526 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:17:40,526 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 20:17:40,681 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,682 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,682 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,682 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,683 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,683 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,684 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,684 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,684 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,685 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,686 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,686 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,687 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,688 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,688 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:40,689 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:17:45,690 - UnrealMCP - WARNING - [unreal_mcp_server.py:111] - Socket timeout during receive
+2025-07-17 20:17:45,691 - UnrealMCP - ERROR - [unreal_mcp_server.py:190] - Error sending command: Timeout receiving Unreal response
+2025-07-17 20:17:45,691 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:17:45,691 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:17:45,691 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:19:25,881 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10449ba10>
+2025-07-17 20:19:25,882 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:19:25,882 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:19:25,882 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:19:25,882 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 20:19:26,358 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,360 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,361 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,363 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,364 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,365 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,366 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,367 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,367 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,368 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,369 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,369 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,370 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,371 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,371 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:26,372 - UnrealMCP - DEBUG - [unreal_mcp_server.py:105] - Received partial response, waiting for more data...
+2025-07-17 20:19:31,374 - UnrealMCP - WARNING - [unreal_mcp_server.py:111] - Socket timeout during receive
+2025-07-17 20:19:31,376 - UnrealMCP - ERROR - [unreal_mcp_server.py:190] - Error sending command: Timeout receiving Unreal response
+2025-07-17 20:19:31,377 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:19:31,377 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Timeout receiving Unreal response'}
+2025-07-17 20:19:31,377 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:19:51,300 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: <mcp.shared.session.RequestResponder object at 0x10449be30>
+2025-07-17 20:19:51,300 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 20:19:51,300 - mcp.server.lowlevel.server - DEBUG - [server.py:537] - Dispatching request of type CallToolRequest
+2025-07-17 20:19:51,301 - UnrealMCP - WARNING - [unreal_mcp_server.py:222] - Existing connection failed: 'NoneType' object has no attribute 'sendall'
+2025-07-17 20:19:51,301 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:19:51,301 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:19:51,301 - UnrealMCP - INFO - [unreal_mcp_server.py:231] - Successfully reconnected to Unreal Engine
+2025-07-17 20:19:51,301 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:19:51,302 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:19:51,302 - UnrealMCP - INFO - [unreal_mcp_server.py:151] - Sending command: {"type": "find_actors_by_name", "params": {"pattern": "LevelSequence"}}
+2025-07-17 20:19:51,674 - UnrealMCP - INFO - [unreal_mcp_server.py:101] - Received complete response (229 bytes)
+2025-07-17 20:19:51,674 - UnrealMCP - INFO - [unreal_mcp_server.py:159] - Complete response from Unreal: {'status': 'success', 'result': {'actors': [{'name': 'LevelSequenceActor_1', 'class': 'LevelSequenceActor', 'location': [187, 83, 172], 'rotation': [0, 0, 0], 'scale': [1, 1, 1]}]}}
+2025-07-17 20:19:51,674 - mcp.server.lowlevel.server - DEBUG - [server.py:572] - Response sent
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 20:21:37,904 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 20:21:37,909 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:21:37,912 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:21:37,916 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:21:37,916 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:21:37,919 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:21:37,919 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 20:21:37,920 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 20:21:37,921 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 20:21:37,921 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:21:37,921 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:21:37,921 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 20:21:45,214 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 11 validation errors for JSONRPCMessage
+JSONRPCRequest.method
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.method
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.result
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.error
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-07-17 20:22:42,783 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 11 validation errors for JSONRPCMessage
+JSONRPCRequest.method
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.method
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.result
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.jsonrpc
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.id
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.error
+  Field required [type=missing, input_value={'random_string': 'test'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-07-17 20:22:54,950 - mcp.server.lowlevel.server - DEBUG - [server.py:491] - Received message: 11 validation errors for JSONRPCMessage
+JSONRPCRequest.method
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.jsonrpc
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCRequest.id
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.method
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCNotification.jsonrpc
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.jsonrpc
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.id
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCResponse.result
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.jsonrpc
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.id
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+JSONRPCError.error
+  Field required [type=missing, input_value={'pattern': 'LevelSequence'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-07-17 20:24:35,208 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 20:25:14,976 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 20:25:14,980 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:25:14,984 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:25:14,988 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:25:14,988 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:25:14,991 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:25:14,991 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 20:25:14,993 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 20:25:14,994 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 20:25:14,994 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:25:14,994 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:25:14,994 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 20:25:20,832 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:145] - Initializing server 'UnrealMCP'
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:384] - Registering handler for ListToolsRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:406] - Registering handler for CallToolRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:252] - Registering handler for ListResourcesRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:286] - Registering handler for ReadResourceRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:222] - Registering handler for PromptListRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:239] - Registering handler for GetPromptRequest
+2025-07-17 20:26:20,292 - mcp.server.lowlevel.server - DEBUG - [server.py:267] - Registering handler for ListResourceTemplatesRequest
+2025-07-17 20:26:20,296 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:26:20,300 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:26:20,304 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:26:20,304 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:26:20,307 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:26:20,307 - UnrealMCP - INFO - [unreal_mcp_server.py:376] - Starting MCP server with stdio transport
+2025-07-17 20:26:20,309 - asyncio - DEBUG - [selector_events.py:64] - Using selector: KqueueSelector
+2025-07-17 20:26:20,309 - UnrealMCP - INFO - [unreal_mcp_server.py:242] - UnrealMCP server starting up
+2025-07-17 20:26:20,309 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:26:20,309 - UnrealMCP - INFO - [unreal_mcp_server.py:63] - Connected to Unreal Engine
+2025-07-17 20:26:20,309 - UnrealMCP - INFO - [unreal_mcp_server.py:246] - Connected to Unreal Engine on startup
+2025-07-17 20:26:28,617 - UnrealMCP - INFO - [unreal_mcp_server.py:259] - Unreal MCP server shut down
+2025-07-17 20:34:01,255 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:34:01,258 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:34:01,262 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:34:01,262 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:34:01,265 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:34:01,265 - UnrealMCP - INFO - [unreal_mcp_server.py:299] - Starting MCP server with stdio transport
+2025-07-17 20:34:01,267 - UnrealMCP - INFO - [unreal_mcp_server.py:169] - UnrealMCP server starting up.
+2025-07-17 20:34:01,267 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:34:01,267 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 20:34:01,267 - UnrealMCP - INFO - [unreal_mcp_server.py:174] - Successfully connected to Unreal Engine on startup. Connection test passed.
+2025-07-17 20:34:14,203 - UnrealMCP - INFO - [unreal_mcp_server.py:182] - Unreal MCP server is shutting down.
+2025-07-17 20:50:31,709 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:50:31,712 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:50:31,716 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:50:31,716 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:50:31,719 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:50:31,719 - UnrealMCP - INFO - [unreal_mcp_server.py:299] - Starting MCP server with stdio transport
+2025-07-17 20:50:31,722 - UnrealMCP - INFO - [unreal_mcp_server.py:169] - UnrealMCP server starting up.
+2025-07-17 20:50:31,722 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:50:31,722 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 20:50:31,722 - UnrealMCP - INFO - [unreal_mcp_server.py:174] - Successfully connected to Unreal Engine on startup. Connection test passed.
+2025-07-17 20:50:32,129 - UnrealMCP - INFO - [unreal_mcp_server.py:182] - Unreal MCP server is shutting down.
+2025-07-17 20:50:40,924 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:50:40,927 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:50:40,931 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:50:40,932 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:50:40,935 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:50:40,935 - UnrealMCP - INFO - [unreal_mcp_server.py:299] - Starting MCP server with stdio transport
+2025-07-17 20:50:40,937 - UnrealMCP - INFO - [unreal_mcp_server.py:169] - UnrealMCP server starting up.
+2025-07-17 20:50:40,937 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:50:40,937 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 20:50:40,937 - UnrealMCP - INFO - [unreal_mcp_server.py:174] - Successfully connected to Unreal Engine on startup. Connection test passed.
+2025-07-17 20:50:41,496 - UnrealMCP - INFO - [unreal_mcp_server.py:182] - Unreal MCP server is shutting down.
+2025-07-17 20:53:38,146 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:53:38,149 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:53:38,153 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:53:38,153 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:53:38,156 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:53:38,157 - UnrealMCP - INFO - [unreal_mcp_server.py:305] - Starting MCP server with stdio transport
+2025-07-17 20:53:38,159 - UnrealMCP - INFO - [unreal_mcp_server.py:169] - UnrealMCP server starting up.
+2025-07-17 20:53:38,159 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:53:38,159 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 20:53:38,159 - UnrealMCP - INFO - [unreal_mcp_server.py:174] - Successfully connected to Unreal Engine on startup. Connection test passed.
+2025-07-17 20:53:38,575 - UnrealMCP - INFO - [unreal_mcp_server.py:182] - Unreal MCP server is shutting down.
+2025-07-17 20:56:15,174 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 20:56:15,183 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 20:56:15,190 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 20:56:15,190 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 20:56:15,193 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 20:56:15,194 - UnrealMCP - INFO - [unreal_mcp_server.py:299] - Starting MCP server with stdio transport
+2025-07-17 20:56:15,196 - UnrealMCP - INFO - [unreal_mcp_server.py:169] - UnrealMCP server starting up.
+2025-07-17 20:56:15,196 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 20:56:15,196 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 20:56:15,196 - UnrealMCP - INFO - [unreal_mcp_server.py:174] - Successfully connected to Unreal Engine on startup. Connection test passed.
+2025-07-17 20:56:15,219 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 20:56:15,222 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-17 21:00:59,335 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 21:00:59,376 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 21:00:59,379 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 21:00:59,383 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 21:00:59,383 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 21:00:59,387 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 21:00:59,387 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 21:00:59,387 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 21:00:59,387 - UnrealMCP - INFO - [unreal_mcp_server.py:120] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 21:01:09,389 - UnrealMCP - WARNING - [unreal_mcp_server.py:98] - Socket timeout while receiving response from Unreal.
+2025-07-17 21:01:09,389 - UnrealMCP - ERROR - [unreal_mcp_server.py:143] - An error occurred while sending command 'get_actors_in_level': Received empty response from Unreal.
+Traceback (most recent call last):
+  File "/Users/dave/code/unreal-mcp/Python/unreal_mcp_server.py", line 129, in send_command
+    raise ValueError("Received empty response from Unreal.")
+ValueError: Received empty response from Unreal.
+2025-07-17 21:01:09,391 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Received empty response from Unreal.'}
+2025-07-17 21:01:09,391 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Received empty response from Unreal.'}
+2025-07-17 21:01:21,934 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-17 21:01:21,934 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-17 21:01:21,935 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-17 21:01:21,935 - UnrealMCP - INFO - [unreal_mcp_server.py:120] - Sending command: {"type": "get_actors_in_level", "params": {}}
+2025-07-17 21:01:31,936 - UnrealMCP - WARNING - [unreal_mcp_server.py:98] - Socket timeout while receiving response from Unreal.
+2025-07-17 21:01:31,936 - UnrealMCP - ERROR - [unreal_mcp_server.py:143] - An error occurred while sending command 'get_actors_in_level': Received empty response from Unreal.
+Traceback (most recent call last):
+  File "/Users/dave/code/unreal-mcp/Python/unreal_mcp_server.py", line 129, in send_command
+    raise ValueError("Received empty response from Unreal.")
+ValueError: Received empty response from Unreal.
+2025-07-17 21:01:31,937 - UnrealMCP - INFO - [editor_tools.py:35] - Complete response from Unreal: {'status': 'error', 'error': 'Received empty response from Unreal.'}
+2025-07-17 21:01:31,938 - UnrealMCP - WARNING - [editor_tools.py:47] - Unexpected response format: {'status': 'error', 'error': 'Received empty response from Unreal.'}
+2025-07-17 21:37:02,997 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 21:37:03,000 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 21:37:03,006 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 21:37:03,006 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 21:37:03,009 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 21:37:03,009 - UnrealMCP - INFO - [unreal_mcp_server.py:290] - Starting MCP server with stdio transport
+2025-07-17 21:38:22,745 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 21:38:22,748 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 21:38:22,751 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 21:38:22,752 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 21:38:22,755 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 21:38:22,755 - UnrealMCP - INFO - [unreal_mcp_server.py:290] - Starting MCP server with stdio transport
+2025-07-17 21:38:58,096 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-17 21:38:58,099 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-17 21:38:58,103 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-17 21:38:58,103 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-17 21:38:58,106 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-17 21:38:58,107 - UnrealMCP - INFO - [unreal_mcp_server.py:290] - Starting MCP server with stdio transport
+2025-07-18 11:37:53,648 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 11:37:53,651 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 11:37:53,654 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 11:37:53,654 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 11:37:53,658 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 11:37:53,658 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 11:39:41,648 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 11:39:41,652 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 11:39:41,655 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 11:39:41,656 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 11:39:41,659 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 11:39:41,659 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 11:42:17,514 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 11:42:17,518 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 11:42:17,522 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 11:42:17,523 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 11:42:17,526 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 11:42:17,526 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 11:42:17,531 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 11:42:17,535 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 11:42:17,541 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 11:42:17,546 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 11:42:17,549 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 11:42:17,550 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 11:42:17,553 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 11:42:17,554 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 11:42:17,558 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 11:42:17,561 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 11:43:30,260 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:43:30,270 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 11:43:30,276 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 11:43:30,281 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 11:43:30,282 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 11:43:30,286 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 11:43:30,286 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest', 'parent_class': 'UserWidget', 'path': '/Game/UI'}
+2025-07-18 11:43:30,286 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:43:30,287 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:43:30,287 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest", "parent_class": "UserWidget", "path": "/Game/UI"}}
+2025-07-18 11:43:30,583 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 60
+2025-07-18 11:43:30,583 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 60 bytes of response data
+2025-07-18 11:43:30,583 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Missing 'name' parameter"
+}
+2025-07-18 11:43:30,583 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Missing 'name' parameter
+2025-07-18 11:43:30,583 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': "Missing 'name' parameter"}
+2025-07-18 11:55:02,555 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:55:02,555 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest', 'parent_class': 'UserWidget', 'path': '/Game/UI'}
+2025-07-18 11:55:02,555 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:55:02,556 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:55:02,556 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest", "parent_class": "UserWidget", "path": "/Game/UI"}}
+2025-07-18 11:55:02,845 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 11:55:02,845 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 11:55:02,847 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 11:55:02,847 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 11:55:02,848 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 11:55:16,781 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:55:16,781 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest', 'parent_class': 'UserWidget', 'path': '/Game/Blueprints'}
+2025-07-18 11:55:16,781 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:55:16,782 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:55:16,782 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest", "parent_class": "UserWidget", "path": "/Game/Blueprints"}}
+2025-07-18 11:55:17,177 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 81
+2025-07-18 11:55:17,177 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 81 bytes of response data
+2025-07-18 11:55:17,177 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Widget Blueprint 'WBP_MCPTest' already exists"
+}
+2025-07-18 11:55:17,177 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Widget Blueprint 'WBP_MCPTest' already exists
+2025-07-18 11:55:17,177 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': "Widget Blueprint 'WBP_MCPTest' already exists"}
+2025-07-18 11:55:22,862 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:55:22,862 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest2', 'parent_class': 'UserWidget', 'path': '/Game/Blueprints'}
+2025-07-18 11:55:22,862 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:55:22,862 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:55:22,862 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest2", "parent_class": "UserWidget", "path": "/Game/Blueprints"}}
+2025-07-18 11:55:23,178 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 11:55:23,179 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 11:55:23,179 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 11:55:23,179 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 11:55:23,179 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 11:55:50,360 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:55:50,360 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest3', 'parent_class': 'UserWidget', 'path': '/Game/UI'}
+2025-07-18 11:55:50,360 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:55:50,361 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:55:50,361 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest3", "parent_class": "UserWidget", "path": "/Game/UI"}}
+2025-07-18 11:55:50,751 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 11:55:50,751 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 11:55:50,751 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 11:55:50,751 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 11:55:50,752 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 11:56:37,779 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:56:37,780 - UnrealMCP - INFO - [umg_tools.py:108] - Adding Text Block to widget with params: {'widget_name': 'WBP_MCPTest', 'text_block_name': 'TestText', 'text': 'Hello from MCP!', 'position': [100.0, 100.0], 'size': [200.0, 50.0], 'font_size': 16, 'color': [1.0, 1.0, 1.0, 1.0]}
+2025-07-18 11:56:37,780 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:56:37,780 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:56:37,780 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_text_block_to_widget", "params": {"widget_name": "WBP_MCPTest", "text_block_name": "TestText", "text": "Hello from MCP!", "position": [100.0, 100.0], "size": [200.0, 50.0], "font_size": 16, "color": [1.0, 1.0, 1.0, 1.0]}}
+2025-07-18 11:56:38,087 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 70
+2025-07-18 11:56:38,087 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 70 bytes of response data
+2025-07-18 11:56:38,087 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Missing 'blueprint_name' parameter"
+}
+2025-07-18 11:56:38,087 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Missing 'blueprint_name' parameter
+2025-07-18 11:56:38,087 - UnrealMCP - INFO - [umg_tools.py:115] - Add Text Block response: {'status': 'error', 'error': "Missing 'blueprint_name' parameter"}
+2025-07-18 11:56:48,036 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 11:56:48,036 - UnrealMCP - INFO - [umg_tools.py:108] - Adding Text Block to widget with params: {'widget_name': 'WBP_MCPTest', 'text_block_name': 'TestText', 'text': 'Hello from MCP!', 'position': [100.0, 100.0], 'size': [200.0, 50.0], 'font_size': 16, 'color': [1.0, 1.0, 1.0, 1.0]}
+2025-07-18 11:56:48,036 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 11:56:48,037 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 11:56:48,037 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_text_block_to_widget", "params": {"widget_name": "WBP_MCPTest", "text_block_name": "TestText", "text": "Hello from MCP!", "position": [100.0, 100.0], "size": [200.0, 50.0], "font_size": 16, "color": [1.0, 1.0, 1.0, 1.0]}}
+2025-07-18 11:56:48,089 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 70
+2025-07-18 11:56:48,089 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 70 bytes of response data
+2025-07-18 11:56:48,089 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Missing 'blueprint_name' parameter"
+}
+2025-07-18 11:56:48,089 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Missing 'blueprint_name' parameter
+2025-07-18 11:56:48,089 - UnrealMCP - INFO - [umg_tools.py:115] - Add Text Block response: {'status': 'error', 'error': "Missing 'blueprint_name' parameter"}
+2025-07-18 12:00:03,199 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 12:00:03,203 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 12:00:03,207 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 12:00:03,208 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 12:00:03,211 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 12:00:03,211 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 12:00:03,216 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 12:00:05,590 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:00:05,602 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 12:00:05,608 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 12:00:05,615 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 12:00:05,615 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 12:00:05,620 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 12:00:05,620 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest4', 'parent_class': 'UserWidget', 'path': '/Game/UI'}
+2025-07-18 12:00:05,620 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:00:05,620 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:00:05,620 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest4", "parent_class": "UserWidget", "path": "/Game/UI"}}
+2025-07-18 12:00:05,779 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 12:00:05,780 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 12:00:05,780 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 12:00:05,780 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 12:00:05,780 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 12:00:37,210 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:00:37,210 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest4', 'parent_class': 'UserWidget', 'path': '/Game/Widgets'}
+2025-07-18 12:00:37,210 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:00:37,211 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:00:37,211 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest4", "parent_class": "UserWidget", "path": "/Game/Widgets"}}
+2025-07-18 12:00:37,394 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 82
+2025-07-18 12:00:37,394 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 82 bytes of response data
+2025-07-18 12:00:37,395 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Widget Blueprint 'WBP_MCPTest4' already exists"
+}
+2025-07-18 12:00:37,395 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Widget Blueprint 'WBP_MCPTest4' already exists
+2025-07-18 12:00:37,395 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': "Widget Blueprint 'WBP_MCPTest4' already exists"}
+2025-07-18 12:00:45,867 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:00:45,868 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest5', 'parent_class': 'UserWidget', 'path': '/Game/Widgets'}
+2025-07-18 12:00:45,868 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:00:45,868 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:00:45,868 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest5", "parent_class": "UserWidget", "path": "/Game/Widgets"}}
+2025-07-18 12:00:46,064 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 12:00:46,065 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 12:00:46,065 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 12:00:46,065 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 12:00:46,065 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 12:00:51,202 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:00:51,203 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest6', 'parent_class': 'UserWidget', 'path': '/Game/UI'}
+2025-07-18 12:00:51,203 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:00:51,203 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:00:51,203 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest6", "parent_class": "UserWidget", "path": "/Game/UI"}}
+2025-07-18 12:00:51,398 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 12:00:51,398 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 12:00:51,398 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 12:00:51,398 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 12:00:51,398 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 12:01:44,852 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:01:44,853 - UnrealMCP - INFO - [umg_tools.py:108] - Adding Text Block to widget with params: {'blueprint_name': 'WBP_MCPTest', 'widget_name': 'TestText', 'text': 'Hello from MCP!', 'position': [100.0, 100.0], 'size': [200.0, 50.0], 'font_size': 16, 'color': [1.0, 1.0, 1.0, 1.0]}
+2025-07-18 12:01:44,853 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:01:44,853 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:01:44,853 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_text_block_to_widget", "params": {"blueprint_name": "WBP_MCPTest", "widget_name": "TestText", "text": "Hello from MCP!", "position": [100.0, 100.0], "size": [200.0, 50.0], "font_size": 16, "color": [1.0, 1.0, 1.0, 1.0]}}
+2025-07-18 12:01:44,975 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 76
+2025-07-18 12:01:44,975 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 76 bytes of response data
+2025-07-18 12:01:44,975 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Widget Blueprint 'WBP_MCPTest' not found"
+}
+2025-07-18 12:01:44,975 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Widget Blueprint 'WBP_MCPTest' not found
+2025-07-18 12:01:44,975 - UnrealMCP - INFO - [umg_tools.py:115] - Add Text Block response: {'status': 'error', 'error': "Widget Blueprint 'WBP_MCPTest' not found"}
+2025-07-18 12:02:09,490 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:02:09,490 - UnrealMCP - INFO - [umg_tools.py:268] - Adding widget to viewport with params: {'blueprint_name': 'WBP_MCPTest', 'z_order': 0}
+2025-07-18 12:02:09,490 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:02:09,491 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:02:09,491 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_widget_to_viewport", "params": {"blueprint_name": "WBP_MCPTest", "z_order": 0}}
+2025-07-18 12:02:09,643 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 76
+2025-07-18 12:02:09,643 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 76 bytes of response data
+2025-07-18 12:02:09,643 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Widget Blueprint 'WBP_MCPTest' not found"
+}
+2025-07-18 12:02:09,643 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Widget Blueprint 'WBP_MCPTest' not found
+2025-07-18 12:02:09,643 - UnrealMCP - INFO - [umg_tools.py:275] - Add widget to viewport response: {'status': 'error', 'error': "Widget Blueprint 'WBP_MCPTest' not found"}
+2025-07-18 12:03:03,669 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:03:03,670 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest7', 'parent_class': 'UserWidget', 'path': '/Game/Widgets'}
+2025-07-18 12:03:03,670 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:03:03,670 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:03:03,670 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest7", "parent_class": "UserWidget", "path": "/Game/Widgets"}}
+2025-07-18 12:03:03,983 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 12:03:03,984 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 12:03:03,984 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 12:03:03,985 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 12:03:03,985 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 12:05:53,950 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:05:53,950 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest9', 'parent_class': 'UserWidget', 'path': '/Game/Widgets'}
+2025-07-18 12:05:53,950 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:05:53,950 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:05:53,951 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest9", "parent_class": "UserWidget", "path": "/Game/Widgets"}}
+2025-07-18 12:05:54,221 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 69
+2025-07-18 12:05:54,221 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 69 bytes of response data
+2025-07-18 12:05:54,221 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "error",
+  "error": "Failed to create Widget Blueprint"
+}
+2025-07-18 12:05:54,221 - UnrealMCP - ERROR - [unreal_mcp_server.py:147] - Unreal API Error: Failed to create Widget Blueprint
+2025-07-18 12:05:54,221 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'error', 'error': 'Failed to create Widget Blueprint'}
+2025-07-18 12:09:29,516 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:09:29,516 - UnrealMCP - INFO - [umg_tools.py:49] - Creating UMG Widget Blueprint with params: {'widget_name': 'WBP_MCPTest10', 'parent_class': 'UserWidget', 'path': '/Game/Widgets'}
+2025-07-18 12:09:29,516 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:09:29,516 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:09:29,516 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "create_umg_widget_blueprint", "params": {"widget_name": "WBP_MCPTest10", "parent_class": "UserWidget", "path": "/Game/Widgets"}}
+2025-07-18 12:09:29,880 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 109
+2025-07-18 12:09:29,881 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 109 bytes of response data
+2025-07-18 12:09:29,881 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "success",
+  "result": {
+    "name": "WBP_MCPTest10",
+    "path": "/Game/Widgets/WBP_MCPTest10"
+  }
+}
+2025-07-18 12:09:29,881 - UnrealMCP - INFO - [umg_tools.py:56] - Create UMG Widget Blueprint response: {'status': 'success', 'result': {'name': 'WBP_MCPTest10', 'path': '/Game/Widgets/WBP_MCPTest10'}}
+2025-07-18 12:09:50,085 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:09:50,085 - UnrealMCP - INFO - [umg_tools.py:108] - Adding Text Block to widget with params: {'blueprint_name': 'WBP_MCPTest10', 'widget_name': 'TestText', 'text': 'Hello from MCP!', 'position': [100.0, 100.0], 'size': [200.0, 50.0], 'font_size': 16, 'color': [1.0, 1.0, 1.0, 1.0]}
+2025-07-18 12:09:50,085 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:09:50,086 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:09:50,086 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_text_block_to_widget", "params": {"blueprint_name": "WBP_MCPTest10", "widget_name": "TestText", "text": "Hello from MCP!", "position": [100.0, 100.0], "size": [200.0, 50.0], "font_size": 16, "color": [1.0, 1.0, 1.0, 1.0]}}
+2025-07-18 12:09:53,403 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 99
+2025-07-18 12:09:53,403 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 99 bytes of response data
+2025-07-18 12:09:53,403 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "success",
+  "result": {
+    "widget_name": "TestText",
+    "text": "Hello from MCP!"
+  }
+}
+2025-07-18 12:09:53,403 - UnrealMCP - INFO - [umg_tools.py:115] - Add Text Block response: {'status': 'success', 'result': {'widget_name': 'TestText', 'text': 'Hello from MCP!'}}
+2025-07-18 12:10:00,274 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:10:00,274 - UnrealMCP - INFO - [umg_tools.py:170] - Adding Button to widget with params: {'blueprint_name': 'WBP_MCPTest10', 'button_name': 'TestButton', 'text': 'Click Me!', 'position': [100.0, 200.0], 'size': [150.0, 40.0], 'font_size': 14, 'color': [1.0, 1.0, 1.0, 1.0], 'background_color': [0.2, 0.6, 1.0, 1.0]}
+2025-07-18 12:10:00,274 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:10:00,275 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:10:00,275 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_button_to_widget", "params": {"blueprint_name": "WBP_MCPTest10", "button_name": "TestButton", "text": "Click Me!", "position": [100.0, 200.0], "size": [150.0, 40.0], "font_size": 14, "color": [1.0, 1.0, 1.0, 1.0], "background_color": [0.2, 0.6, 1.0, 1.0]}}
+2025-07-18 12:10:00,529 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 85
+2025-07-18 12:10:00,529 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 85 bytes of response data
+2025-07-18 12:10:00,530 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "success",
+  "result": {
+    "error": "Missing widget_name parameter"
+  }
+}
+2025-07-18 12:10:00,530 - UnrealMCP - INFO - [umg_tools.py:177] - Add Button response: {'status': 'success', 'result': {'error': 'Missing widget_name parameter'}}
+2025-07-18 12:14:24,524 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:14:24,524 - UnrealMCP - INFO - [umg_tools.py:170] - Adding Button to widget with params: {'blueprint_name': 'WBP_MCPTest10', 'button_name': 'TestButton', 'text': 'Click Me!', 'position': [100.0, 200.0], 'size': [150.0, 40.0], 'font_size': 14, 'color': [1.0, 1.0, 1.0, 1.0], 'background_color': [0.2, 0.6, 1.0, 1.0]}
+2025-07-18 12:14:24,524 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:14:24,525 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:14:24,525 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_button_to_widget", "params": {"blueprint_name": "WBP_MCPTest10", "button_name": "TestButton", "text": "Click Me!", "position": [100.0, 200.0], "size": [150.0, 40.0], "font_size": 14, "color": [1.0, 1.0, 1.0, 1.0], "background_color": [0.2, 0.6, 1.0, 1.0]}}
+2025-07-18 12:14:24,897 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 85
+2025-07-18 12:14:24,897 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 85 bytes of response data
+2025-07-18 12:14:24,898 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "success",
+  "result": {
+    "error": "Missing widget_name parameter"
+  }
+}
+2025-07-18 12:14:24,898 - UnrealMCP - INFO - [umg_tools.py:177] - Add Button response: {'status': 'success', 'result': {'error': 'Missing widget_name parameter'}}
+2025-07-18 12:14:58,724 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 12:14:58,728 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 12:14:58,731 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 12:14:58,732 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 12:14:58,735 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 12:14:58,735 - UnrealMCP - INFO - [unreal_mcp_server.py:300] - Starting MCP server with stdio transport
+2025-07-18 12:14:58,739 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type ListToolsRequest
+2025-07-18 12:15:14,152 - mcp.server.lowlevel.server - INFO - [server.py:534] - Processing request of type CallToolRequest
+2025-07-18 12:15:14,162 - UnrealMCP - INFO - [editor_tools.py:369] - Editor tools registered successfully
+2025-07-18 12:15:14,168 - UnrealMCP - INFO - [blueprint_tools.py:420] - Blueprint tools registered successfully
+2025-07-18 12:15:14,174 - UnrealMCP - INFO - [node_tools.py:430] - Blueprint node tools registered successfully
+2025-07-18 12:15:14,175 - UnrealMCP - INFO - [project_tools.py:64] - Project tools registered successfully
+2025-07-18 12:15:14,180 - UnrealMCP - INFO - [umg_tools.py:333] - UMG tools registered successfully
+2025-07-18 12:15:14,180 - UnrealMCP - INFO - [umg_tools.py:170] - Adding Button to widget with params: {'blueprint_name': 'WBP_MCPTest10', 'widget_name': 'TestButton', 'text': 'Click Me!', 'position': [0.0, 0.0], 'size': [200.0, 50.0], 'font_size': 12, 'color': [1.0, 1.0, 1.0, 1.0], 'background_color': [0.1, 0.1, 0.1, 1.0]}
+2025-07-18 12:15:14,180 - UnrealMCP - INFO - [unreal_mcp_server.py:49] - Connecting to Unreal at 127.0.0.1:55557...
+2025-07-18 12:15:14,180 - UnrealMCP - INFO - [unreal_mcp_server.py:61] - Successfully connected to Unreal Engine
+2025-07-18 12:15:14,180 - UnrealMCP - INFO - [unreal_mcp_server.py:130] - Sending command to Unreal: {"command": "add_button_to_widget", "params": {"blueprint_name": "WBP_MCPTest10", "widget_name": "TestButton", "text": "Click Me!", "position": [0.0, 0.0], "size": [200.0, 50.0], "font_size": 12, "color": [1.0, 1.0, 1.0, 1.0], "background_color": [0.1, 0.1, 0.1, 1.0]}}
+2025-07-18 12:15:16,895 - UnrealMCP - INFO - [unreal_mcp_server.py:92] - Expecting message of length: 91
+2025-07-18 12:15:16,895 - UnrealMCP - INFO - [unreal_mcp_server.py:104] - Received 91 bytes of response data
+2025-07-18 12:15:16,895 - UnrealMCP - INFO - [unreal_mcp_server.py:142] - Complete response from Unreal: {
+  "status": "success",
+  "result": {
+    "success": true,
+    "widget_name": "TestButton"
+  }
+}
+2025-07-18 12:15:16,895 - UnrealMCP - INFO - [umg_tools.py:177] - Add Button response: {'status': 'success', 'result': {'success': True, 'widget_name': 'TestButton'}}
