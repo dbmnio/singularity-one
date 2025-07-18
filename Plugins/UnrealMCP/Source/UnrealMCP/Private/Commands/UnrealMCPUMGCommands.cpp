@@ -62,67 +62,127 @@ TSharedPtr<FJsonObject> FUnrealMCPUMGCommands::HandleCommand(const FString& Comm
 
 TSharedPtr<FJsonObject> FUnrealMCPUMGCommands::HandleCreateUMGWidgetBlueprint(const TSharedPtr<FJsonObject>& Params)
 {
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Starting HandleCreateUMGWidgetBlueprint"));
+	
 	// Get required parameters
 	FString BlueprintName;
-	if (!Params->TryGetStringField(TEXT("name"), BlueprintName))
+	if (!Params->TryGetStringField(TEXT("widget_name"), BlueprintName))
 	{
-		return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Missing 'name' parameter"));
+		UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: Missing 'widget_name' parameter"));
+		return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Missing 'widget_name' parameter"));
 	}
+
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: BlueprintName = %s"), *BlueprintName);
 
 	// Create the full asset path
 	FString PackagePath = TEXT("/Game/Widgets/");
 	FString AssetName = BlueprintName;
 	FString FullPath = PackagePath + AssetName;
 
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: PackagePath = %s"), *PackagePath);
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: AssetName = %s"), *AssetName);
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: FullPath = %s"), *FullPath);
+
 	// Check if asset already exists
 	if (UEditorAssetLibrary::DoesAssetExist(FullPath))
 	{
+		UE_LOG(LogTemp, Warning, TEXT("UnrealMCPUMGCommands: Widget Blueprint '%s' already exists"), *BlueprintName);
 		return FUnrealMCPCommonUtils::CreateErrorResponse(FString::Printf(TEXT("Widget Blueprint '%s' already exists"), *BlueprintName));
 	}
 
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Asset does not exist, proceeding with creation"));
+
 	// Create package
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Creating package..."));
 	UPackage* Package = CreatePackage(*FullPath);
 	if (!Package)
 	{
+		UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: Failed to create package for path: %s"), *FullPath);
 		return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to create package"));
 	}
 
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Package created successfully"));
+
 	// Create Widget Blueprint using KismetEditorUtilities
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Creating Widget Blueprint using FKismetEditorUtilities::CreateBlueprint..."));
 	UBlueprint* NewBlueprint = FKismetEditorUtilities::CreateBlueprint(
 		UUserWidget::StaticClass(),  // Parent class
 		Package,                     // Outer package
 		FName(*AssetName),           // Blueprint name
 		BPTYPE_Normal,               // Blueprint type
-		UBlueprint::StaticClass(),   // Blueprint class
+		UWidgetBlueprint::StaticClass(),   // Blueprint class - Use UWidgetBlueprint instead of UBlueprint
 		UBlueprintGeneratedClass::StaticClass(), // Generated class
 		FName("CreateUMGWidget")     // Creation method name
 	);
+
+	if (!NewBlueprint)
+	{
+		UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: FKismetEditorUtilities::CreateBlueprint returned null"));
+		return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("FKismetEditorUtilities::CreateBlueprint failed"));
+	}
+
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: NewBlueprint created successfully"));
 
 	// Make sure the Blueprint was created successfully
 	UWidgetBlueprint* WidgetBlueprint = Cast<UWidgetBlueprint>(NewBlueprint);
 	if (!WidgetBlueprint)
 	{
-		return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to create Widget Blueprint"));
+		UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: Failed to cast NewBlueprint to UWidgetBlueprint. NewBlueprint class: %s"), 
+			NewBlueprint ? *NewBlueprint->GetClass()->GetName() : TEXT("null"));
+		
+		// Try alternative approach - create Widget Blueprint directly
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Trying alternative approach with NewObject..."));
+		WidgetBlueprint = NewObject<UWidgetBlueprint>(Package, FName(*AssetName), RF_Public | RF_Standalone);
+		if (!WidgetBlueprint)
+		{
+			UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: Alternative approach also failed"));
+			return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to create Widget Blueprint"));
+		}
+		
+		// Set up the Widget Blueprint
+		WidgetBlueprint->ParentClass = UUserWidget::StaticClass();
+		WidgetBlueprint->WidgetTree = NewObject<UWidgetTree>(WidgetBlueprint);
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Alternative Widget Blueprint creation successful"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: WidgetBlueprint cast successful"));
 	}
 
 	// Add a default Canvas Panel if one doesn't exist
 	if (!WidgetBlueprint->WidgetTree->RootWidget)
 	{
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: No root widget found, creating Canvas Panel..."));
 		UCanvasPanel* RootCanvas = WidgetBlueprint->WidgetTree->ConstructWidget<UCanvasPanel>(UCanvasPanel::StaticClass());
+		if (!RootCanvas)
+		{
+			UE_LOG(LogTemp, Error, TEXT("UnrealMCPUMGCommands: Failed to create Canvas Panel"));
+			return FUnrealMCPCommonUtils::CreateErrorResponse(TEXT("Failed to create Canvas Panel"));
+		}
 		WidgetBlueprint->WidgetTree->RootWidget = RootCanvas;
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Canvas Panel created and set as root widget"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Root widget already exists"));
 	}
 
 	// Mark the package dirty and notify asset registry
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Marking package dirty and notifying asset registry..."));
 	Package->MarkPackageDirty();
 	FAssetRegistryModule::AssetCreated(WidgetBlueprint);
 
 	// Compile the blueprint
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Compiling blueprint..."));
 	FKismetEditorUtilities::CompileBlueprint(WidgetBlueprint);
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Blueprint compilation completed"));
 
 	// Create success response
 	TSharedPtr<FJsonObject> ResultObj = MakeShared<FJsonObject>();
 	ResultObj->SetStringField(TEXT("name"), BlueprintName);
 	ResultObj->SetStringField(TEXT("path"), FullPath);
+	
+	UE_LOG(LogTemp, Display, TEXT("UnrealMCPUMGCommands: Widget Blueprint creation successful: %s"), *FullPath);
 	return ResultObj;
 }
 

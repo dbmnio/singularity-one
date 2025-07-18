@@ -129,18 +129,21 @@ void FMCPServerRunnable::HandleClientConnection(TSharedPtr<FSocket> InClientSock
                 {
                     if (BytesRead == MessageLength)
                     {
-                        // Convert received data to string and process it
-                        FString ReceivedText = FString(UTF8_TO_TCHAR(MessagePayload.GetData()));
-                        
-                        // Debug: Log the raw bytes to see if there are any issues
-                        UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Raw message bytes (first 20):"));
-                        for (int32 i = 0; i < FMath::Min(20, (int32)MessagePayload.Num()); ++i)
-                        {
-                            UE_LOG(LogTemp, Display, TEXT("  [%d]: 0x%02X ('%c')"), i, MessagePayload[i], 
-                                   (MessagePayload[i] >= 32 && MessagePayload[i] <= 126) ? (TCHAR)MessagePayload[i] : TEXT('?'));
-                        }
-                        
-                        ProcessMessage(InClientSocket, ReceivedText);
+						// Convert the byte array to a string for the JSON reader
+						FString JsonString;
+						FFileHelper::BufferToString(JsonString, MessagePayload.GetData(), MessagePayload.Num());
+
+						TSharedPtr<FJsonObject> JsonObject;
+						TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(JsonString);
+
+						if (FJsonSerializer::Deserialize(Reader, JsonObject) && JsonObject.IsValid())
+						{
+							ProcessMessage(InClientSocket, JsonObject);
+						}
+						else
+						{
+							UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Failed to parse JSON message. Error: %s"), *Reader->GetErrorMessage());
+						}
                     }
                     else
                     {
@@ -168,124 +171,40 @@ void FMCPServerRunnable::HandleClientConnection(TSharedPtr<FSocket> InClientSock
     }
 }
 
-void FMCPServerRunnable::ProcessMessage(TSharedPtr<FSocket> Client, const FString& Message)
+void FMCPServerRunnable::ProcessMessage(TSharedPtr<FSocket> Client, const TSharedPtr<FJsonObject>& JsonObject)
 {
-    UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Received: %s"), *Message);
-
-    // Clean the message by removing any trailing non-printable characters
-    FString CleanMessage = Message;
-    CleanMessage.TrimStartAndEnd();
-    
-    // Debug: Log the length and last few characters
-    UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Message length: %d"), CleanMessage.Len());
-    if (CleanMessage.Len() > 10)
+    if (!JsonObject.IsValid())
     {
-        FString LastChars = CleanMessage.Right(10);
-        UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Last 10 characters: %s"), *LastChars);
+        UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: ProcessMessage received an invalid JSON object."));
+        return;
     }
-    
-    // Find the last valid JSON closing brace and truncate there
-    int32 LastValidBrace = -1;
-    for (int32 i = CleanMessage.Len() - 1; i >= 0; --i)
+	
+    FString CommandType;
+    if (!JsonObject->TryGetStringField(TEXT("command"), CommandType))
     {
-        TCHAR Char = CleanMessage[i];
-        if (Char == TEXT('}'))
-        {
-            // Check if this is a valid closing brace by counting braces
-            int32 BraceCount = 0;
-            bool bValidBrace = true;
-            for (int32 j = 0; j <= i; ++j)
-            {
-                TCHAR CheckChar = CleanMessage[j];
-                if (CheckChar == TEXT('{'))
-                {
-                    BraceCount++;
-                }
-                else if (CheckChar == TEXT('}'))
-                {
-                    BraceCount--;
-                    if (BraceCount < 0)
-                    {
-                        bValidBrace = false;
-                        break;
-                    }
-                }
-            }
-            if (bValidBrace && BraceCount == 0)
-            {
-                LastValidBrace = i;
-                break;
-            }
-        }
-    }
-    
-    if (LastValidBrace >= 0)
-    {
-        CleanMessage = CleanMessage.Left(LastValidBrace + 1);
-        UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Cleaned message to: %s"), *CleanMessage);
-    }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Could not find valid JSON structure, using original message"));
-    }
-
-    TSharedPtr<FJsonObject> JsonObject;
-    
-    // Try different JSON reader approaches
-    bool bParseSuccess = false;
-    
-    // First attempt: Standard JSON reader
-    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(CleanMessage);
-    bParseSuccess = FJsonSerializer::Deserialize(Reader, JsonObject);
-    
-    // If that fails, try with a different reader type
-    if (!bParseSuccess || !JsonObject.IsValid())
-    {
-        UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: First JSON parse attempt failed, trying alternative approach"));
-        
-        // Try with a different reader type
-        TSharedRef<TJsonReader<TCHAR>> AltReader = TJsonReaderFactory<TCHAR>::Create(CleanMessage);
-        bParseSuccess = FJsonSerializer::Deserialize(AltReader, JsonObject);
-    }
-    
-    if (!bParseSuccess || !JsonObject.IsValid())
-    {
-        UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Failed to parse JSON from: %s"), *CleanMessage);
+        UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: JSON message does not contain a 'command' field."));
         return;
     }
 
-    FString CommandType;
-    if (JsonObject->TryGetStringField(TEXT("type"), CommandType))
-    {
-        FString ResponseStr = Bridge->ExecuteCommand(CommandType, JsonObject->GetObjectField(TEXT("params")));
-        
-        UE_LOG(LogTemp, Display, TEXT("MCPServerRunnable: Sending response: %s"), *ResponseStr);
-        
-        FTCHARToUTF8 ConvertedResponse(*ResponseStr);
-        int32 ResponseLength = ConvertedResponse.Length();
-        
-        // Send the 4-byte length prefix first (little-endian)
-        uint8 LengthBytes[4];
-        LengthBytes[0] = (ResponseLength >> 0) & 0xFF;
-        LengthBytes[1] = (ResponseLength >> 8) & 0xFF;
-        LengthBytes[2] = (ResponseLength >> 16) & 0xFF;
-        LengthBytes[3] = (ResponseLength >> 24) & 0xFF;
-        
-        int32 BytesSent = 0;
-        if (!Client->Send(LengthBytes, sizeof(LengthBytes), BytesSent))
-        {
-            UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Failed to send response length"));
-            return;
-        }
-        
-        // Then send the response payload
-        if (!Client->Send((uint8*)ConvertedResponse.Get(), ResponseLength, BytesSent))
-        {
-            UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Failed to send response payload"));
-        }
-    }
-    else
-    {
-        UE_LOG(LogTemp, Warning, TEXT("MCPServerRunnable: Missing 'type' field in command"));
-    }
+    TSharedPtr<FJsonObject> Params = JsonObject->GetObjectField(TEXT("params"));
+
+    // Execute the command on the game thread
+    FString ResultString = Bridge->ExecuteCommand(CommandType, Params);
+
+    // Send the response back to the client
+    FTCHARToUTF8 Converter(*ResultString);
+    int32 ResponseLength = Converter.Length();
+    
+    // Send the 4-byte length prefix first (little-endian)
+    uint8 LengthBytes[4];
+    LengthBytes[0] = (ResponseLength >> 0) & 0xFF;
+    LengthBytes[1] = (ResponseLength >> 8) & 0xFF;
+    LengthBytes[2] = (ResponseLength >> 16) & 0xFF;
+    LengthBytes[3] = (ResponseLength >> 24) & 0xFF;
+    
+    int32 BytesSent = 0;
+    Client->Send(LengthBytes, sizeof(LengthBytes), BytesSent);
+
+    // Then send the response payload
+    Client->Send((uint8*)Converter.Get(), ResponseLength, BytesSent);
 } 

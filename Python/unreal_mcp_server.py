@@ -122,12 +122,12 @@ class UnrealConnection:
 
         try:
             command_obj = {
-                "type": command,
+                "command": command,
                 "params": params or {}
             }
             
             command_json = json.dumps(command_obj)
-            logger.info(f"Sending command: {command_json}")
+            logger.info(f"Sending command to Unreal: {command_json}")
 
             # Encode the message and prefix it with its length
             message = command_json.encode('utf-8')

@@ -64,7 +64,7 @@ def register_umg_tools(mcp: FastMCP):
     @mcp.tool()
     def add_text_block_to_widget(
         ctx: Context,
-        widget_name: str,
+        blueprint_name: str,
         text_block_name: str,
         text: str = "",
         position: List[float] = [0.0, 0.0],
@@ -76,7 +76,7 @@ def register_umg_tools(mcp: FastMCP):
         Add a Text Block widget to a UMG Widget Blueprint.
         
         Args:
-            widget_name: Name of the target Widget Blueprint
+            blueprint_name: Name of the target Widget Blueprint
             text_block_name: Name to give the new Text Block
             text: Initial text content
             position: [X, Y] position in the canvas panel
@@ -96,8 +96,8 @@ def register_umg_tools(mcp: FastMCP):
                 return {"success": False, "message": "Failed to connect to Unreal Engine"}
             
             params = {
-                "widget_name": widget_name,
-                "text_block_name": text_block_name,
+                "blueprint_name": blueprint_name,
+                "widget_name": text_block_name,
                 "text": text,
                 "position": position,
                 "size": size,
@@ -123,7 +123,7 @@ def register_umg_tools(mcp: FastMCP):
     @mcp.tool()
     def add_button_to_widget(
         ctx: Context,
-        widget_name: str,
+        blueprint_name: str,
         button_name: str,
         text: str = "",
         position: List[float] = [0.0, 0.0],
@@ -136,7 +136,7 @@ def register_umg_tools(mcp: FastMCP):
         Add a Button widget to a UMG Widget Blueprint.
         
         Args:
-            widget_name: Name of the target Widget Blueprint
+            blueprint_name: Name of the target Widget Blueprint
             button_name: Name to give the new Button
             text: Text to display on the button
             position: [X, Y] position in the canvas panel
@@ -157,8 +157,8 @@ def register_umg_tools(mcp: FastMCP):
                 return {"success": False, "message": "Failed to connect to Unreal Engine"}
             
             params = {
-                "widget_name": widget_name,
-                "button_name": button_name,
+                "blueprint_name": blueprint_name,
+                "widget_name": button_name,
                 "text": text,
                 "position": position,
                 "size": size,
@@ -185,7 +185,7 @@ def register_umg_tools(mcp: FastMCP):
     @mcp.tool()
     def bind_widget_event(
         ctx: Context,
-        widget_name: str,
+        blueprint_name: str,
         widget_component_name: str,
         event_name: str,
         function_name: str = ""
@@ -194,7 +194,7 @@ def register_umg_tools(mcp: FastMCP):
         Bind an event on a widget component to a function.
         
         Args:
-            widget_name: Name of the target Widget Blueprint
+            blueprint_name: Name of the target Widget Blueprint
             widget_component_name: Name of the widget component (button, etc.)
             event_name: Name of the event to bind (OnClicked, etc.)
             function_name: Name of the function to create/bind to (defaults to f"{widget_component_name}_{event_name}")
@@ -215,7 +215,7 @@ def register_umg_tools(mcp: FastMCP):
                 function_name = f"{widget_component_name}_{event_name}"
             
             params = {
-                "widget_name": widget_name,
+                "blueprint_name": blueprint_name,
                 "widget_component_name": widget_component_name,
                 "event_name": event_name,
                 "function_name": function_name
@@ -239,14 +239,14 @@ def register_umg_tools(mcp: FastMCP):
     @mcp.tool()
     def add_widget_to_viewport(
         ctx: Context,
-        widget_name: str,
+        blueprint_name: str,
         z_order: int = 0
     ) -> Dict[str, Any]:
         """
         Add a Widget Blueprint instance to the viewport.
         
         Args:
-            widget_name: Name of the Widget Blueprint to add
+            blueprint_name: Name of the Widget Blueprint to add
             z_order: Z-order for the widget (higher numbers appear on top)
             
         Returns:
@@ -261,7 +261,7 @@ def register_umg_tools(mcp: FastMCP):
                 return {"success": False, "message": "Failed to connect to Unreal Engine"}
             
             params = {
-                "widget_name": widget_name,
+                "blueprint_name": blueprint_name,
                 "z_order": z_order
             }
             
@@ -283,18 +283,18 @@ def register_umg_tools(mcp: FastMCP):
     @mcp.tool()
     def set_text_block_binding(
         ctx: Context,
+        blueprint_name: str,
         widget_name: str,
-        text_block_name: str,
-        binding_property: str,
+        binding_name: str,
         binding_type: str = "Text"
     ) -> Dict[str, Any]:
         """
         Set up a property binding for a Text Block widget.
         
         Args:
-            widget_name: Name of the target Widget Blueprint
-            text_block_name: Name of the Text Block to bind
-            binding_property: Name of the property to bind to
+            blueprint_name: Name of the target Widget Blueprint
+            widget_name: Name of the Text Block to bind
+            binding_name: Name of the property to bind to
             binding_type: Type of binding (Text, Visibility, etc.)
             
         Returns:
@@ -309,9 +309,9 @@ def register_umg_tools(mcp: FastMCP):
                 return {"success": False, "message": "Failed to connect to Unreal Engine"}
             
             params = {
+                "blueprint_name": blueprint_name,
                 "widget_name": widget_name,
-                "text_block_name": text_block_name,
-                "binding_property": binding_property,
+                "binding_name": binding_name,
                 "binding_type": binding_type
             }
             

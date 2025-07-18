@@ -24,11 +24,10 @@ public:
 
 protected:
 	void HandleClientConnection(TSharedPtr<FSocket> ClientSocket);
-	void ProcessMessage(TSharedPtr<FSocket> Client, const FString& Message);
+	void ProcessMessage(TSharedPtr<FSocket> Client, const TSharedPtr<FJsonObject>& JsonObject);
 
 private:
 	UUnrealMCPBridge* Bridge;
 	TSharedPtr<FSocket> ListenerSocket;
-	TSharedPtr<FSocket> ClientSocket;
 	bool bRunning;
 }; 
